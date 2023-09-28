@@ -10,7 +10,7 @@ class SistemaDeLogin {
     public function efetuarLogin($email, $senha) {
         $autenticado = $this->autenticavel->autenticar($email, $senha);
         if ($autenticado) {
-            echo "Usuário logado com sucesso";
+            echo "Usuário logado com ssucesso";
         } else {
             echo "Falha na autenticação";
         }

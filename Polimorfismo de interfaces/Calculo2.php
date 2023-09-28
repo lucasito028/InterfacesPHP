@@ -1,6 +1,6 @@
 <?php
     
-    class Calculo1 extends Calculadora implements OperacoesMatematicas{
+    class Calculo2 extends Calculadora implements OperacoesMatematicas{
 
         public function adicao($n1, $n2){
             $this->resultado = $n1 + $n2;

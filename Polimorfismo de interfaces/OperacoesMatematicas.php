@@ -2,11 +2,11 @@
 
 interface OperacoesMatematicas{
 
-    function adicao();
+    function adicao($n1, $n2);
 
-    function subtracao();
+    function subtracao($n1, $n2);
 
-    function multiplicacao();
+    function multiplicacao($n1, $n2);
 
-     function divisao();
+     function divisao($n1, $n2);
 }
