@@ -1,19 +1,19 @@
 <?php
     
-    class Sistemalogin {
+class SistemaDeLogin {
+    protected $autenticavel;
 
-        protected $autenticavel;
-    
-        public function __construct(Autenticavel $autenticavel){
-            $this->autenticavel = $autenticavel;}
+    public function __construct(Autenticavel $autenticavel) {
+        $this->autenticavel = $autenticavel;
+    }
 
-
-        public function efetuarlogin($email, $senha){
-            if($this->autenticavel->autenticar($email, $senha)){
-                echo "Usuario Logado com Sucesso";
-           }else{
-               echo "Deu errado algo";
-           }
-            
+    public function efetuarLogin($email, $senha) {
+        $autenticado = $this->autenticavel->autenticar($email, $senha);
+        if ($autenticado) {
+            echo "Usuário logado com sucesso";
+        } else {
+            echo "Falha na autenticação";
         }
     }
+}
+

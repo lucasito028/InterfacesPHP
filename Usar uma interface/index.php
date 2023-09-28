@@ -14,9 +14,11 @@
 
         //$teste = new Usuario("Pao", "Pao");
         //$teste = new Administrador("Pao", "Pao", "14 99999-9999");
+
         $usuario = new Usuario("usuario@example.com", "senha123");
-        $sistemaDeLogin = new Sistemalogin($usuario);
+        $sistemaDeLogin = new SistemaDeLogin($usuario);
         $sistemaDeLogin->efetuarLogin("usuario@example.com", "senha123");
+
 
     ?>
 </body>
