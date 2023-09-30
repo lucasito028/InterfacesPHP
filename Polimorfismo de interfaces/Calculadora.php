@@ -1,6 +1,6 @@
 <?php
     
-    abstract class Calculadora{
+    abstract class Calculadora implements OperacoesMatematicas{
 
         protected $resultado;
     
